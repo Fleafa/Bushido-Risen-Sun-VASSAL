@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VASSAL.launch.BasicModule VassalVersion="3.2.17" description="" name="Bushido: Risen Sun" nextPieceSlotId="55" version="0.0">
+    <VASSAL.build.module.BasicCommandEncoder/>
+    <VASSAL.build.module.Documentation>
+        <VASSAL.build.module.documentation.AboutScreen fileName="/images/Splash.png" title="About Module"/>
+        <VASSAL.build.module.documentation.HelpFile fileName="/help/Intro.html" fileType="resource" title="Quick Start"/>
+    </VASSAL.build.module.Documentation>
+    <VASSAL.build.module.PlayerRoster buttonText="Retire" buttonToolTip="Allow another player to take your side in this game">
+        <entry>Player1</entry>
+        <entry>Player2</entry>
+    </VASSAL.build.module.PlayerRoster>
+    <VASSAL.build.module.GlobalOptions autoReport="Always" centerOnMove="Always" nonOwnerUnmaskable="Never" playerIdFormat="$PlayerName$" promptString="Opponents can unmask my pieces">
+        <option name="stepIcon">/images/StepForward16.gif</option>
+        <option name="undoIcon">/images/Undo16.gif</option>
+        <option name="stepHotKey">34,0</option>
+        <option name="serverControlsIcon">/images/connect.gif</option>
+        <option name="serverControlsHotKey">83,520</option>
+    </VASSAL.build.module.GlobalOptions>
+    <VASSAL.build.module.Map allowMultiple="false" backgroundcolor="255,255,255" buttonName="Map" changeFormat="$message$" color="0,0,0" createFormat="$pieceName$ created in $location$" edgeHeight="0" edgeWidth="0" hotkey="" icon="" launch="false" mapName="Main Map" markMoved="Always" markUnmovedIcon="/images/unmoved.gif" markUnmovedText="" markUnmovedTooltip="Mark all pieces on this map as not moved" moveKey="" moveToFormat="$pieceName$ moves $previousLocation$ -&gt; $location$ *" moveWithinFormat="$pieceName$ moves $previousLocation$ -&gt; $location$ *" thickness="0">
+        <VASSAL.build.module.map.BoardPicker addColumnText="Add column" addRowText="Add row" boardPrompt="Select board" slotHeight="125" slotScale="0.2" slotWidth="350" title="Choose Boards">
+            <setup>Main MapBoardPicker	Battlefield	0	0</setup>
+            <VASSAL.build.module.map.boardPicker.Board image="MainBoard-Placeholder.png" name="Battlefield" reversible="false"/>
+        </VASSAL.build.module.map.BoardPicker>
+        <VASSAL.build.module.map.StackMetrics bottom="40,0" disabled="true" down="37,0" exSepX="6" exSepY="18" top="38,0" unexSepX="2" unexSepY="4" up="39,0"/>
+        <VASSAL.build.module.map.ForwardToKeyBuffer/>
+        <VASSAL.build.module.map.Scroller/>
+        <VASSAL.build.module.map.ForwardToChatter/>
+        <VASSAL.build.module.map.MenuDisplayer/>
+        <VASSAL.build.module.map.MapCenterer/>
+        <VASSAL.build.module.map.StackExpander/>
+        <VASSAL.build.module.map.PieceMover/>
+        <VASSAL.build.module.map.KeyBufferer/>
+        <VASSAL.build.module.map.ImageSaver buttonText="" hotkey="" icon="/images/camera.gif" tooltip="Save Map as PNG image"/>
+        <VASSAL.build.module.properties.GlobalProperties/>
+        <VASSAL.build.module.map.SelectionHighlighters/>
+        <VASSAL.build.module.map.HighlightLastMoved color="255,0,0" enabled="true" thickness="2"/>
+        <VASSAL.build.module.map.Zoomer inButtonText="" inIconName="" inTooltip="Zoom in" outButtonText="" outIconName="" outTooltip="Zoom out" pickButtonText="" pickIconName="/images/zoom.png" pickTooltip="Select Zoom" zoomInKey="" zoomLevels="0.5,0.75,0.85,1.0,1.5" zoomOutKey="" zoomPickKey="" zoomStart="3"/>
+        <VASSAL.build.module.map.CounterDetailViewer borderWidth="0" counterReportFormat="" delay="500" display="from top-most layer only" emptyHexReportForma="$LocationName$" fgColor="0,0,0" fontSize="9" graphicsZoom="1.0" hotkey="32,130" layerList="" minDisplayPieces="0" propertyFilter="" showDeck="false" showMoveSelectde="false" showNoStack="true" showNonMovable="false" showgraph="true" showgraphsingle="false" showtext="false" showtextsingle="false" summaryReportFormat="$LocationName$" unrotatePieces="false" version="2" zoomlevel="10.0"/>
+        <VASSAL.build.module.map.SetupStack name="P1AttDice1" useGridLocation="false" x="1127" y="315">
+            <VASSAL.build.widget.PieceSlot entryName="one" gpid="23" height="0" width="0">+/null/button;63743,0,Direct;-10;-10;20;20;	globalkey;;63743,0,Direct;49,650;Player = 1 &amp;&amp; type = attack;false;1;true;true;;Set #;-1\	globalkey;;63743,0,Direct;68,130;Player = 1 &amp;&amp; type = attack;false;1;true;true;;Roll;-1\\	macro;Turn dice on;;82,130;Die Faces_Active = false &amp;&amp; Number_Pressed &gt;= 1;82\,130;79\,130;false;;;counted;;;;false;;1;1\\\	prototype;TutorialDie\\\\	piece;;;;one/	\	\\	\\\	\\\\	null;0;0;23</VASSAL.build.widget.PieceSlot>
+        </VASSAL.build.module.map.SetupStack>
+        <VASSAL.build.module.map.SetupStack name="P1AttDice2" useGridLocation="false" x="1127" y="337">
+            <VASSAL.build.widget.PieceSlot entryName="two" gpid="37" height="0" width="0">+/null/button;63743,0,Direct;-10;-10;20;20;	globalkey;;63743,0,Direct;50,650;Player = 1 &amp;&amp; type = attack;false;1;true;true;;Set #;-1\	globalkey;;63743,0,Direct;68,130;Player = 1 &amp;&amp; type = attack;false;1;true;true;;Roll;-1\\	macro;Turn dice on;;82,130;Die Faces_Active = false &amp;&amp; Number_Pressed &gt;= 2;;79\,130;false;;;counted;;;;false;;1;1\\\	prototype;TutorialDie\\\\	piece;;;;two/	\	\\	\\\	\\\\	null;0;0;37</VASSAL.build.widget.PieceSlot>
+        </VASSAL.build.module.map.SetupStack>
+        <VASSAL.build.module.map.SetupStack name="P1AttDice3" useGridLocation="false" x="1127" y="359">
+            <VASSAL.build.widget.PieceSlot entryName="three" gpid="38" height="0" width="0">+/null/button;63743,0,Direct;-10;-10;20;20;	globalkey;;63743,0,Direct;51,650;Player = 1 &amp;&amp; type = attack;false;1;true;true;;Set #;-1\	globalkey;;63743,0,Direct;68,130;Player = 1 &amp;&amp; type = attack;false;1;true;true;;Roll;-1\\	macro;Turn dice on;;82,130;Die Faces_Active = false &amp;&amp; Number_Pressed &gt;= 3;;79\,130;false;;;counted;;;;false;;1;1\\\	prototype;TutorialDie\\\\	piece;;;Dice-Blank.png;three/	\	\\	\\\	\\\\	null;0;0;38</VASSAL.build.widget.PieceSlot>
+        </VASSAL.build.module.map.SetupStack>
+        <VASSAL.build.module.map.SetupStack name="P1AttDice4" useGridLocation="false" x="1127" y="381">
+            <VASSAL.build.widget.PieceSlot entryName="four" gpid="40" height="0" width="0">+/null/button;63743,0,Direct;-10;-10;20;20;	globalkey;;63743,0,Direct;52,650;Player = 1 &amp;&amp; type = attack;false;1;true;true;;Set #;-1\	globalkey;;63743,0,Direct;68,130;Player = 1 &amp;&amp; type = attack;false;1;true;true;;Roll;-1\\	macro;Turn dice on;;82,130;Die Faces_Active = false &amp;&amp; Number_Pressed &gt;= 4;;79\,130;false;;;counted;;;;false;;1;1\\\	prototype;TutorialDie\\\\	piece;;;Dice-Blank.png;four/	\	\\	\\\	\\\\	null;0;0;40</VASSAL.build.widget.PieceSlot>
+        </VASSAL.build.module.map.SetupStack>
+        <VASSAL.build.module.map.SetupStack name="P1AttDice5" useGridLocation="false" x="1127" y="403">
+            <VASSAL.build.widget.PieceSlot entryName="five" gpid="39" height="0" width="0">+/null/button;63743,0,Direct;-10;-10;20;20;	globalkey;;63743,0,Direct;53,650;Player = 1 &amp;&amp; type = attack;false;1;true;true;;Set #;-1\	globalkey;;63743,0,Direct;68,130;Player = 1 &amp;&amp; type = attack;false;1;true;true;;Roll;-1\\	macro;Turn dice on;;82,130;Die Faces_Active = false &amp;&amp; Number_Pressed &gt;= 5;;79\,130;false;;;counted;;;;false;;1;1\\\	prototype;TutorialDie\\\\	piece;;;Dice-Blank.png;five/	\	\\	\\\	\\\\	null;0;0;39</VASSAL.build.widget.PieceSlot>
+        </VASSAL.build.module.map.SetupStack>
+        <VASSAL.build.module.map.SetupStack name="P1DefDice1" useGridLocation="false" x="1149" y="315">
+            <VASSAL.build.widget.PieceSlot entryName="P1DefDie1" gpid="28" height="0" width="0">+/null/button;63743,0,Direct;-10;-10;20;20;	globalkey;;63743,0,Direct;49,650;Player = 1 &amp;&amp; type = defence;false;1;true;true;;Set #;-1\	globalkey;;63743,0,Direct;68,130;Player = 1 &amp;&amp; type = defence;false;1;true;true;;Roll;-1\\	macro;Turn dice on;;82,130;Die Faces_Active = false &amp;&amp; P1DefDice &gt;= 1;;79\,130;false;;;counted;;;;false;;1;1\\\	prototype;TutorialDie\\\\	piece;;;Dice-Blank.png;P1DefDie1/	\	\\	\\\	\\\\	null;0;0;28</VASSAL.build.widget.PieceSlot>
+        </VASSAL.build.module.map.SetupStack>
+        <VASSAL.build.module.map.SetupStack name="P1DefDice2" useGridLocation="false" x="1149" y="337">
+            <VASSAL.build.widget.PieceSlot entryName="P1DefDie2" gpid="29" height="0" width="0">+/null/button;63743,0,Direct;-10;-10;20;20;	globalkey;;63743,0,Direct;50,650;Player = 1 &amp;&amp; type = defence;false;1;true;true;;Set #;-1\	globalkey;;63743,0,Direct;68,130;Player = 1 &amp;&amp; type = defence;false;1;true;true;;Roll;-1\\	macro;Turn dice on;;82,130;Die Faces_Active = false &amp;&amp; P1DefDice &gt;= 2;;79\,130;false;;;counted;;;;false;;1;1\\\	prototype;TutorialDie\\\\	piece;;;Dice-Blank.png;P1DefDie2/	\	\\	\\\	\\\\	null;0;0;29</VASSAL.build.widget.PieceSlot>
+        </VASSAL.build.module.map.SetupStack>
+        <VASSAL.build.module.map.SetupStack name="P1DefDice3" useGridLocation="false" x="1149" y="359">
+            <VASSAL.build.widget.PieceSlot entryName="P1DefDie3" gpid="30" height="0" width="0">+/null/button;63743,0,Direct;-10;-10;20;20;	globalkey;;63743,0,Direct;51,650;Player = 1 &amp;&amp; type = defence;false;1;true;true;;Set #;-1\	globalkey;;63743,0,Direct;68,130;Player = 1 &amp;&amp; type = defence;false;1;true;true;;Roll;-1\\	macro;Turn dice on;;82,130;Die Faces_Active = false &amp;&amp; P1DefDice &gt;= 3;;79\,130;false;;;counted;;;;false;;1;1\\\	prototype;TutorialDie\\\\	piece;;;Dice-Blank.png;P1DefDie3/	\	\\	\\\	\\\\	null;0;0;30</VASSAL.build.widget.PieceSlot>
+        </VASSAL.build.module.map.SetupStack>
+        <VASSAL.build.module.map.SetupStack name="P1DefDice4" useGridLocation="false" x="1149" y="381">
+            <VASSAL.build.widget.PieceSlot entryName="P1DefDie4" gpid="31" height="0" width="0">+/null/button;63743,0,Direct;-10;-10;20;20;	globalkey;;63743,0,Direct;52,650;Player = 1 &amp;&amp; type = defence;false;1;true;true;;Set #;-1\	globalkey;;63743,0,Direct;68,130;Player = 1 &amp;&amp; type = defence;false;1;true;true;;Roll;-1\\	macro;Turn dice on;;82,130;Die Faces_Active = false &amp;&amp; P1DefDice &gt;= 4;;79\,130;false;;;counted;;;;false;;1;1\\\	prototype;TutorialDie\\\\	piece;;;Dice-Blank.png;P1DefDie4/	\	\\	\\\	\\\\	null;0;0;31</VASSAL.build.widget.PieceSlot>
+        </VASSAL.build.module.map.SetupStack>
+        <VASSAL.build.module.map.SetupStack name="P1DefDice5" useGridLocation="false" x="1149" y="403">
+            <VASSAL.build.widget.PieceSlot entryName="P1DefDie5" gpid="32" height="0" width="0">+/null/button;63743,0,Direct;-10;-10;20;20;	globalkey;;63743,0,Direct;53,650;Player = 1 &amp;&amp; type = defence;false;1;true;true;;Set #;-1\	globalkey;;63743,0,Direct;68,130;Player = 1 &amp;&amp; type = defence;false;1;true;true;;Roll;-1\\	macro;Turn dice on;;82,130;Die Faces_Active = false &amp;&amp; P1DefDice &gt;= 5;;79\,130;false;;;counted;;;;false;;1;1\\\	prototype;TutorialDie\\\\	piece;;;Dice-Blank.png;P1DefDie5/	\	\\	\\\	\\\\	null;0;0;32</VASSAL.build.widget.PieceSlot>
+        </VASSAL.build.module.map.SetupStack>
+        <VASSAL.build.module.map.SetupStack name="ClearAll" useGridLocation="false" x="1138" y="293">
+            <VASSAL.build.widget.PieceSlot entryName="clear" gpid="53" height="0" width="0">+/null/report;63743\,0\,Direct;Dice cleared;;;	immob;;V\	button;63743,0,Direct;-21;-10;43;20;\\	globalkey;;63743,0,Direct;48,650;Player = 1;false;1;true;true;;Set #;-1\\\	piece;;;Dice-ClearAll.png;clear/-1	\	\\	\\\	null;0;0;53</VASSAL.build.widget.PieceSlot>
+        </VASSAL.build.module.map.SetupStack>
+    </VASSAL.build.module.Map>
+    <VASSAL.build.module.gamepieceimage.GamePieceImageDefinitions>
+        <VASSAL.build.module.gamepieceimage.ColorManager/>
+        <VASSAL.build.module.gamepieceimage.FontManager>
+            <VASSAL.build.module.gamepieceimage.FontStyle name="Default" style="Dialog,0,12,false"/>
+        </VASSAL.build.module.gamepieceimage.FontManager>
+        <VASSAL.build.module.gamepieceimage.GamePieceLayoutsContainer/>
+    </VASSAL.build.module.gamepieceimage.GamePieceImageDefinitions>
+    <VASSAL.build.module.properties.GlobalProperties>
+        <VASSAL.build.module.properties.GlobalProperty description="Globally stores the integer value of the number whose button was just pressed" initialValue="0" isNumeric="true" max="5" min="0" name="Number_Pressed" wrap="false"/>
+        <VASSAL.build.module.properties.GlobalProperty description="Globally stores the integer value of the number whose button was just pressed" initialValue="0" isNumeric="true" max="5" min="0" name="P1DefDice" wrap="false"/>
+    </VASSAL.build.module.properties.GlobalProperties>
+    <VASSAL.build.module.PrototypesContainer>
+        <VASSAL.build.module.PrototypeDefinition name="Rotate">+/null/rotate;1;35,0;Free Rotate;;;Free Rotation	rotate;72;39,65;37,65;Rotate CW (fine);Rotate CCW (fine);;;Fine Rotation\	rotate;36;39,0;37,0;Rotate CW (rough);Rotate CCW (rough);;;Rough Rotation\\	piece;;;;/0.0	0\	0\\	null;0;0;</VASSAL.build.module.PrototypeDefinition>
+        <VASSAL.build.module.PrototypeDefinition name="Model">+/null/immob;;N	prototype;Model Menu\	prototype;Movement\\	prototype;Nudge\\\	prototype;Rotate\\\\	delete;Delete;68,130\\\\\	piece;;;;/	\	\\	\\\	\\\\	\\\\\	null;255;0;</VASSAL.build.module.PrototypeDefinition>
+        <VASSAL.build.module.PrototypeDefinition name="Movement">+/null/translate;Backward 1\/2";40,65;0;-20;false;0;0;0;0;Backward 1\/2"	translate;Backward 1";40,0;0;-40;false;0;0;0;0;Backward 1"\	translate;Forward 1\/2";38,65;0;20;false;0;0;0;0;Forward 1\/2"\\	translate;Forward 1";38,0;0;40;false;0;0;0;0;Forward 1"\\\	piece;;;;/	\	\\	\\\	null;0;0;</VASSAL.build.module.PrototypeDefinition>
+        <VASSAL.build.module.PrototypeDefinition name="Nudge">+/null/translate;Nudge Backward;40,130;0;-1;false;0;0;0;0;Nudge Backward	translate;Nudge Right;39,130;1;0;false;0;0;0;0;Nudge Right\	translate;Nudge Left;37,130;-1;0;false;0;0;0;0;Nudge Left\\	translate;Nudge Forward;38,130;0;1;false;0;0;0;0;Nudge Forward\\\	piece;;;;/	\	\\	\\\	null;282;0;</VASSAL.build.module.PrototypeDefinition>
+        <VASSAL.build.module.PrototypeDefinition name="Model Menu">+/null/submenu;Rotate;Rotate Freely,CW 5°,CCW 5°,CW 10°,CCW 10°	submenu;Movement;Forward 1",Forward 1\/2",Backward 1",Backward 1\/2"\	submenu;Wounds;Mark Wound,Remove Wound\\	piece;;;;/	\	\\	null;251;0;</VASSAL.build.module.PrototypeDefinition>
+        <VASSAL.build.module.PrototypeDefinition name="Card 5 Wounds">+/null/emb2;Activate;2;;;2;;;2;;;;1;false;0;0;,Wounds-1Track5-Mark1.png,Wounds-1Track5-Mark2.png,Wounds-1Track5-Mark3.png,Wounds-1Track5-Mark4.png,Wounds-1Track5-Mark5.png;,,,,,;true;Card Wounds;;;true;Card Wounds;0;1;true;65,130;;	piece;;;;/1	null;300;204;</VASSAL.build.module.PrototypeDefinition>
+        <VASSAL.build.module.PrototypeDefinition name="Model 30mm">+/null/label;;;10;;51,51,255;c;24;r;0;b;c;$pieceName$;Dialog;1;0;TextLabel;Ki	label;;;10;;204,0,0;c;30;l;8;b;c;$pieceName$;Dialog;1;0;TextLabel;MaxWds\	label;;;10;;204,0,0;c;24;l;0;b;c;$pieceName$;Dialog;1;0;TextLabel;Wounds\\	piece;;;;/$ModelKi$	\/$ModelWoundsMax$\	$ModelWounds$\\	null;256;15;</VASSAL.build.module.PrototypeDefinition>
+        <VASSAL.build.module.PrototypeDefinition name="Card">+/null/immob;;N	prototype;Card Menu\	delete;Delete;68,130\\	piece;;;;/	\	\\	null;253;0;</VASSAL.build.module.PrototypeDefinition>
+        <VASSAL.build.module.PrototypeDefinition name="Dice">+/null/PROP;Rolled;true,1,6,false;Random:82\,65:P\,Rand	mark;Layer\	immob;n;V\\	button;63743,0,Rand;-33;-33;44;44;\\\	label;;Change Label;12;;219,219,203;c;0;c;-22;c;c;;Dialog;1;0;TextLabel;\\\\	label;;Change Label;12;;0,0,0;c;2;c;-24;c;c;;Dialog;1;0;TextLabel;\\\\\	emb2;;2;;;2;;;2;;;;1;false;0;0;Dice-1.png,Dice-2.png,Dice-3.png,Dice-4.png,Dice-5.png,Dice-6.png;,,,,,;false;DiceLayer;63743,0,Rand;Randomize;false;;1;1;false;63743,0,ShowHide;;\\\\\\	emb2;;2;;;2;;;2;;;;1;false;0;0;Dice-Hole.png;;false;;;;false;;1;1;true;;;\\\\\\\	piece;;;;/	Controls\	\\	\\\	$DiceNumber$\\\\	$DiceNumber$\\\\\	-1\\\\\\	1\\\\\\\	null;257;10;</VASSAL.build.module.PrototypeDefinition>
+        <VASSAL.build.module.PrototypeDefinition name="CardReference">+/null/piece;;;;/null;0;0;</VASSAL.build.module.PrototypeDefinition>
+        <VASSAL.build.module.PrototypeDefinition name="References">+/null/emb2;Activate;2;;;2;;;2;;;;1;false;0;0;,Card-Ito-Ito-Kinu.jpg;,;false;ReferenceCard;;;true;VisiblePlayer;1;1;true;65,130;;	piece;;;;/1	null;219;0;</VASSAL.build.module.PrototypeDefinition>
+        <VASSAL.build.module.PrototypeDefinition name="SpecialCardP1">+/null/obs;77,130;Card-Special-Back.png;Flip;GCard-Special-Back.png;?;sides:Player1;Peek	PROP;Defence;true,0,5,false;1 Defence Die::P\,1\	PROP;SetAttack;true,0,5,false;1 Attack Die:91\,0:I\,-1,2 Attack Dice:93\,0:I\,1\\	label;;;48;0,0,255;255,255,255;t;0;l;0;b;c;$pieceName$ ($label$);Dialog;1;0;TextLabel;DefenceDice\\\	label;;;48;255,0,51;0,0,0;c;0;c;0;b;c;$pieceName$ ($label$);Dialog;1;0;TextLabel;AttackDice\\\\	emb2;Activate;2;;;2;;;2;;;;1;false;-50;50;,Dice-1.png,Dice-2.png,Dice-3.png;,,,;false;AttackDiceIMG;;;true;SetAttack;1;1;true;65,130;;\\\\\	return;Return to Deck;82,130;Special Cards Deck;Select destination\\\\\\	piece;;;;/null;	\	1\\	$Defence$\\\	$SetAttack$\\\\	1\\\\\	\\\\\\	null;263;66;</VASSAL.build.module.PrototypeDefinition>
+        <VASSAL.build.module.PrototypeDefinition name="TutorialDie">+/null/restrict;Player 1;false;true	immob;;V\	emb2;;2;;;2;;;2;;;;1;false;0;0;,Dice-1.png,Dice-2.png,Dice-3.png,Dice-4.png,Dice-5.png,Dice-6.png;,,,,,,;false;Die Faces;;;true;dicevalue;0;1;false;79,130;;\\	PROP;dicevalue;true,0,6,false;:82\,130:P\,0,:49\,130:P\,$dice_result$,:50\,130:P\,$dice_result$,:51\,130:P\,$dice_result$,:52\,130:P\,$dice_result$,:53\,130:P\,$dice_result$\\\	mark;type\\\\	emb2;Activate;2;;;2;;;2;;;;1;false;0;0;Dice-Hole.png;;false;;;;false;;1;1;true;65,130;;\\\\\	piece;;;;/	\	-1\\	0\\\	dice\\\\	1\\\\\	null;0;0;</VASSAL.build.module.PrototypeDefinition>
+    </VASSAL.build.module.PrototypesContainer>
+    <VASSAL.build.module.PieceWindow hidden="false" hotkey="" icon="" name="Entities" text="Entities" tooltip="Show/Hide the null window">
+        <VASSAL.build.widget.TabWidget entryName="Entities">
+            <VASSAL.build.widget.PanelWidget entryName="Factions" fixed="false" nColumns="1" vert="false">
+                <VASSAL.build.widget.BoxWidget entryName="Faction" height="411" width="1390">
+                    <VASSAL.build.widget.PanelWidget entryName="Ito Clan" fixed="true" nColumns="2" vert="false">
+                        <VASSAL.build.widget.ListWidget divider="646" entryName="Models" height="24" width="60">
+                            <VASSAL.build.widget.PieceSlot entryName="Ishi" gpid="0" height="47" width="47">+/null/emb2;Activate;2;;;2;;;2;;;;1;false;0;0;Model-Ito-Ishi.png;;false;;;;false;;1;1;true;65,130;;	piece;;;Base-30mm.png;Ishi/1	null;0;0;0</VASSAL.build.widget.PieceSlot>
+                            <VASSAL.build.widget.PieceSlot entryName="Ito Kinu" gpid="1" height="65" width="53">+/null/PROP;ModelKi;true,0,8,false;Gain Ki:72\,0:I\,1,Lose Ki:71\,0:I\,-1	PROP;ModelWoundsMax;true,0,20,false;\	PROP;ModelWounds;true,0,5,false;Heal Wound:78\,0:I\,-1,Mark Wound:66\,0:I\,1\\	label;;;10;;0,0,0;b;12;c;0;b;c;$pieceName$ ($label$);SansSerif;1;0;TextLabel;Name\\\	prototype;Model 30mm\\\\	emb2;Activate;2;;;2;;;2;;;;1;true;0;0;Model-Ito-Ito-Kinu.png;;false;;;;false;;1;1;true;65,130;;\\\\\	prototype;Model\\\\\\	piece;;;Base-30mm.png;Ito Kinu/2	5\	0\\	Ito Kinu\\\	\\\\	1\\\\\	\\\\\\	null;0;0;1</VASSAL.build.widget.PieceSlot>
+                            <VASSAL.build.widget.PieceSlot entryName="Isas" gpid="2" height="47" width="47">+/null/emb2;Activate;2;;;2;;;2;;;;1;false;0;0;Model-Ito-Isas.png;;false;;;;false;;1;1;true;65,130;;	piece;;;Base-30mm.png;Isas/1	null;0;0;2</VASSAL.build.widget.PieceSlot>
+                        </VASSAL.build.widget.ListWidget>
+                        <VASSAL.build.widget.ListWidget divider="646" entryName="Cards" height="24" width="60">
+                            <VASSAL.build.widget.PieceSlot entryName="Ito Kinu" gpid="6" height="409" width="600">+/null/PROP;Card Wounds;true,0,5,false;Heal Wound:78\,0:I\,-1,Mark Wound:66\,0:I\,1	prototype;Card 5 Wounds\	prototype;Card\\	piece;;;Card-Ito-Ito-Kinu.jpg;Ito Kinu/1	\	\\	null;0;0;6</VASSAL.build.widget.PieceSlot>
+                        </VASSAL.build.widget.ListWidget>
+                    </VASSAL.build.widget.PanelWidget>
+                    <VASSAL.build.widget.PanelWidget entryName="Prefecture of Ryu" fixed="false" nColumns="3" vert="false">
+                        <VASSAL.build.widget.ListWidget divider="1357" entryName="Models" height="347" width="1390">
+                            <VASSAL.build.widget.PieceSlot entryName="Takeshi Akira" gpid="3" height="47" width="47">+/null/emb2;Activate;2;;;2;;;2;;;;1;false;0;0;Model-Ryu-Takashi-Akira.png;;false;;;;false;;1;1;true;65,130;;	piece;;;Base-30mm.png;Takeshi Akira/1	null;0;0;3</VASSAL.build.widget.PieceSlot>
+                            <VASSAL.build.widget.PieceSlot entryName="Ima" gpid="4" height="47" width="47">+/null/emb2;Activate;2;;;2;;;2;;;;1;false;0;0;Model-Ryu-Ima.png;;false;;;;false;;1;1;true;65,130;;	piece;;;Base-30mm.png;Ima/1	null;0;0;4</VASSAL.build.widget.PieceSlot>
+                            <VASSAL.build.widget.PieceSlot entryName="Hiromasa" gpid="5" height="47" width="47">+/null/emb2;Activate;2;;;2;;;2;;;;1;false;0;0;Model-Ryu-Hiromasa.png;;false;;;;false;;1;1;true;65,130;;	piece;;;Base-30mm.png;Hiromasa/1	null;0;0;5</VASSAL.build.widget.PieceSlot>
+                        </VASSAL.build.widget.ListWidget>
+                    </VASSAL.build.widget.PanelWidget>
+                </VASSAL.build.widget.BoxWidget>
+            </VASSAL.build.widget.PanelWidget>
+            <VASSAL.build.widget.PanelWidget entryName="Terrain" fixed="false" nColumns="3" vert="false"/>
+            <VASSAL.build.widget.PanelWidget entryName="Other" fixed="false" nColumns="3" vert="false">
+                <VASSAL.build.widget.PieceSlot entryName="D6" gpid="33" height="21" width="35">+/null/prototype;Dice	piece;;;Dice-Blank.png;D6/	null;0;0;33</VASSAL.build.widget.PieceSlot>
+            </VASSAL.build.widget.PanelWidget>
+        </VASSAL.build.widget.TabWidget>
+    </VASSAL.build.module.PieceWindow>
+    <VASSAL.build.module.Chatter/>
+    <VASSAL.i18n.Language/>
+    <VASSAL.build.module.Map allowMultiple="false" backgroundcolor="255,255,255" buttonName="Map" changeFormat="$message$" color="0,0,0" createFormat="$pieceName$ created in $location$" edgeHeight="0" edgeWidth="0" hotkey="" icon="" launch="true" mapName="Cards" markMoved="Never" markUnmovedIcon="/images/unmoved.gif" markUnmovedText="" markUnmovedTooltip="Mark all pieces on this map as not moved" moveKey="" moveToFormat="$pieceName$ moves $previousLocation$ -&gt; $location$ *" moveWithinFormat="$pieceName$ moves $previousLocation$ -&gt; $location$ *" thickness="0">
+        <VASSAL.build.module.map.BoardPicker addColumnText="Add column" addRowText="Add row" boardPrompt="Select board" slotHeight="125" slotScale="0.2" slotWidth="350" title="Choose Boards">
+            <VASSAL.build.module.map.boardPicker.Board height="400" name="Cards" reversible="false" width="600"/>
+        </VASSAL.build.module.map.BoardPicker>
+        <VASSAL.build.module.map.StackMetrics bottom="40,0" disabled="true" down="37,0" exSepX="6" exSepY="18" top="38,0" unexSepX="2" unexSepY="4" up="39,0"/>
+        <VASSAL.build.module.map.ForwardToKeyBuffer/>
+        <VASSAL.build.module.map.Scroller/>
+        <VASSAL.build.module.map.ForwardToChatter/>
+        <VASSAL.build.module.map.MenuDisplayer/>
+        <VASSAL.build.module.map.MapCenterer/>
+        <VASSAL.build.module.map.StackExpander/>
+        <VASSAL.build.module.map.PieceMover/>
+        <VASSAL.build.module.map.KeyBufferer/>
+        <VASSAL.build.module.map.ImageSaver buttonText="" hotkey="" icon="/images/camera.gif" tooltip="Save Map as PNG image"/>
+        <VASSAL.build.module.map.CounterDetailViewer borderWidth="0" counterReportFormat="" delay="700" display="from top-most layer only" emptyHexReportForma="$LocationName$" fgColor="0,0,0" fontSize="9" graphicsZoom="1.0" hotkey="32,130" layerList="" minDisplayPieces="2" propertyFilter="" showDeck="false" showMoveSelectde="false" showNoStack="false" showNonMovable="false" showgraph="true" showgraphsingle="false" showtext="false" showtextsingle="false" summaryReportFormat="$LocationName$" unrotatePieces="false" version="" zoomlevel="1.0"/>
+        <VASSAL.build.module.properties.GlobalProperties/>
+        <VASSAL.build.module.map.SelectionHighlighters/>
+        <VASSAL.build.module.map.HighlightLastMoved color="255,0,0" enabled="true" thickness="2"/>
+        <VASSAL.build.module.map.SetupStack name="CardSet" useGridLocation="false" x="150" y="100">
+            <VASSAL.build.widget.PieceSlot entryName="Cards" gpid="10" height="0" width="0">+/null/immob;;V	prototype;References\	piece;;;Card-Blank.png;Cards/	\	null;0;0;10</VASSAL.build.widget.PieceSlot>
+        </VASSAL.build.module.map.SetupStack>
+        <VASSAL.build.module.map.Zoomer inButtonText="" inIconName="/images/zoomIn.gif" inTooltip="Zoom in" outButtonText="" outIconName="/images/zoomOut.gif" outTooltip="Zoom out" pickButtonText="" pickIconName="/images/zoom.png" pickTooltip="Select Zoom" zoomInKey="" zoomLevels="0.25,0.5,1.0" zoomOutKey="" zoomPickKey="" zoomStart="3"/>
+    </VASSAL.build.module.Map>
+    <VASSAL.build.module.PrivateMap allowMultiple="false" backgroundcolor="255,255,255" buttonName="Map" changeFormat="$message$" color="0,0,0" createFormat="$pieceName$ created in $location$" edgeHeight="0" edgeWidth="0" hotkey="" icon="" launch="false" mapName="Private Map P1" markMoved="Never" markUnmovedIcon="/images/unmoved.gif" markUnmovedText="" markUnmovedTooltip="Mark all pieces on this map as not moved" moveKey="" moveToFormat="$pieceName$ moves $previousLocation$ -&gt; $location$ *" moveWithinFormat="$pieceName$ moves $previousLocation$ -&gt; $location$ *" side="Player1" thickness="0" visible="false">
+        <VASSAL.build.module.map.BoardPicker addColumnText="Add column" addRowText="Add row" boardPrompt="Select board" slotHeight="125" slotScale="0.2" slotWidth="350" title="Choose Boards">
+            <VASSAL.build.module.map.boardPicker.Board height="532" name="PrivateP1" reversible="false" width="390"/>
+        </VASSAL.build.module.map.BoardPicker>
+        <VASSAL.build.module.map.StackMetrics bottom="40,0" disabled="false" down="37,0" exSepX="6" exSepY="18" top="38,0" unexSepX="2" unexSepY="4" up="39,0"/>
+        <VASSAL.build.module.map.ForwardToKeyBuffer/>
+        <VASSAL.build.module.map.Scroller/>
+        <VASSAL.build.module.map.ForwardToChatter/>
+        <VASSAL.build.module.map.MenuDisplayer/>
+        <VASSAL.build.module.map.MapCenterer/>
+        <VASSAL.build.module.map.StackExpander/>
+        <VASSAL.build.module.map.PieceMover/>
+        <VASSAL.build.module.map.KeyBufferer/>
+        <VASSAL.build.module.map.CounterDetailViewer bgColor="255,255,255" borderWidth="0" counterReportFormat="" delay="700" display="from top-most layer only" emptyHexReportForma="$LocationName$" fgColor="0,0,0" fontSize="9" graphicsZoom="1.0" hotkey="32,130" layerList="" minDisplayPieces="2" propertyFilter="" showDeck="false" showMoveSelectde="false" showNoStack="false" showNonMovable="false" showgraph="true" showgraphsingle="false" showtext="false" showtextsingle="false" summaryReportFormat="$LocationName$" unrotatePieces="false" version="2" zoomlevel="1.0"/>
+        <VASSAL.build.module.properties.GlobalProperties/>
+        <VASSAL.build.module.map.SelectionHighlighters/>
+        <VASSAL.build.module.map.DrawPile allowMultiple="false" allowSelect="true" canSave="false" color="255,0,51" countExpressions="" draw="true" drawFaceUp="false" emptyHotkey="" expressionCounting="false" faceDown="Always" faceDownFormat="" height="40" hotkeyOnEmpty="false" maxStack="10" name="Special Cards Deck" owningBoard="PrivateP1" reshufflable="false" reshuffleCommand="" reshuffleHotkey="" reshuffleMessage="" reshuffleTarget="" restrictExpression="" restrictOption="false" reverseCommand="Reverse" reverseFormat="" reverseHotkey="" reversible="false" selectDisplayProperty="$BasicName$" selectSortProperty="" shuffle="Never" shuffleCommand="Shuffle" shuffleFormat="" shuffleHotkey="" width="40" x="240" y="335">
+            <VASSAL.build.widget.CardSlot entryName="Attack" gpid="15" height="0" width="0">+/null/prototype;SpecialCardP1	piece;;;Card-Special-Attack.png;Attack/	null;0;0;15</VASSAL.build.widget.CardSlot>
+            <VASSAL.build.widget.CardSlot entryName="Defence" gpid="16" height="0" width="0">+/null/prototype;SpecialCardP1	piece;;;Card-Special-Defence.png;Defence/	null;0;0;16</VASSAL.build.widget.CardSlot>
+            <VASSAL.build.widget.CardSlot entryName="Bluff" gpid="18" height="0" width="0">+/null/prototype;SpecialCardP1	piece;;;Card-Special-Bluff.png;Bluff/	null;0;0;18</VASSAL.build.widget.CardSlot>
+        </VASSAL.build.module.map.DrawPile>
+        <VASSAL.build.module.map.HighlightLastMoved color="255,0,0" enabled="true" thickness="2"/>
+        <VASSAL.build.module.map.SetupStack name="Number Buttons" useGridLocation="false" x="120" y="15">
+            <VASSAL.build.widget.PieceSlot entryName="Player1 Attack Dice" gpid="35" height="0" width="0">+/null/button;63743,0,Report;-120;-20;240;40;Report	immob;;V\	report;63743\,0\,Report;$PlayerName$ $newPieceName$ selected;;;Attack Dice \\	globalkey;;82,715;82,130;type = dice;false;1;true;true;;resets and turns on dice;-1\\\	globalkey;;90,715;79,130;type = dice &amp;&amp; Die Faces_Active = true;false;1;true;true;;Turns off dice and resets;-1\\\\	macro;Reset the dice;;;;48\,650,49\,650,50\,650,51\,650,52\,650,53\,650;90\,715,82\,715;false;;;counted;;;;false;;1;1\\\\\	setprop;Number_Pressed;true,0,5,false;:48\,650:P\,0,:49\,650:P\,1,:50\,650:P\,2,:51\,650:P\,3,:52\,650:P\,4,:53\,650:P\,5;Set number of Att button pressed into global property;Current Zone\/Current Map\/Module;\\\\\\	button;53,650;80;-20;40;40;Press 5\\\\\\\	button;52,650;40;-20;40;40;Press 4\\\\\\\\	button;51,650;0;-20;40;40;Press 3\\\\\\\\\	button;50,650;-40;-20;40;40;Press 2\\\\\\\\\\	button;49,650;-80;-20;40;40;Press 1\\\\\\\\\\\	button;48,650;-120;-20;40;40;Press 0\\\\\\\\\\\\	emb2;Activate;2;;;2;;;2;;;;1;false;0;0;Button-AttackDice-Pressed0.png,Button-AttackDice-Pressed1.png,Button-AttackDice-Pressed2.png,Button-AttackDice-Pressed3.png,Button-AttackDice-Pressed4.png,Button-AttackDice-Pressed5.png;,,,,,;false;Number button Layers;;;true;Number_Pressed;0;1;true;65,130;;\\\\\\\\\\\\\	mark;type\\\\\\\\\\\\\\	mark;Player\\\\\\\\\\\\\\\	piece;;;;Player1 Attack Dice/	\	-1\\	\\\	\\\\	\\\\\	\\\\\\	\\\\\\\	\\\\\\\\	\\\\\\\\\	\\\\\\\\\\	\\\\\\\\\\\	\\\\\\\\\\\\	1\\\\\\\\\\\\\	attack\\\\\\\\\\\\\\	1\\\\\\\\\\\\\\\	null;0;0;35</VASSAL.build.widget.PieceSlot>
+        </VASSAL.build.module.map.SetupStack>
+        <VASSAL.build.module.map.SetupStack name="Roll Attack" useGridLocation="false" x="90" y="50">
+            <VASSAL.build.widget.PieceSlot entryName="Diceroller" gpid="47" height="0" width="0">+/null/report;63743\,0\,ReportAttack;$PlayerName$ rolled Attack;;;	setprop;Number_Pressed;true,0,5,false;::P\,0;Set number of Att button pressed into global property;Current Zone\/Current Map\/Module;\	button;68,130;-75;-15;150;30;Roll Dice\\	globalkey;;53,130;53,130;BasicName = five;false;1;true;true;;set dice 5;-1\\\	globalkey;;52,130;52,130;BasicName = four;false;1;true;true;;set dice 4;-1\\\\	globalkey;;51,130;51,130;BasicName = three;false;1;true;true;;set dice 3;-1\\\\\	globalkey;;50,130;50,130;BasicName = two;false;1;true;true;;set dice 2;-1\\\\\\	globalkey;;49,130;49,130;BasicName = one;false;1;true;true;;set dice 1;-1\\\\\\\	globalhotkey;;48,130;81,130;rolls the dice\\\\\\\\	macro;roll 5;;68,520;rollvalue = 5;;48\,130,49\,130,48\,130,50\,130,48\,130,51\,130,48\,130,52\,130,48\,130,53\,130;false;;;counted;;;;false;;1;1\\\\\\\\\	macro;roll 4;;68,520;rollvalue = 4;;48\,130,49\,130,48\,130,50\,130,48\,130,51\,130,48\,130,52\,130;false;;;counted;;;;false;;1;1\\\\\\\\\\	macro;roll 3;;68,520;rollvalue = 3;;48\,130,49\,130,48\,130,50\,130,48\,130,51\,130;false;;;counted;;;;false;;1;1\\\\\\\\\\\	macro;roll 2;;68,520;rollvalue = 2;;48\,130,49\,130,48\,130,50\,130;false;;;counted;;;;false;;1;1\\\\\\\\\\\\	macro;roll 1;;68,520;rollvalue = 1;;48\,130,49\,130;false;;;counted;;;;false;;1;1\\\\\\\\\\\\\	macro;roll 0;;68,520;rollvalue = 0;;48\,130;false;;;counted;;;;false;;1;1\\\\\\\\\\\\\\	PROP;rollvalue;true,0,6,false;:68\,65:P\,$Number_Pressed$\\\\\\\\\\\\\\\	macro;Dice start;Roll Dice;68,130;;;68\,65,68\,520,63743\,0\,ReportAttack;false;;;counted;;;;false;;1;1\\\\\\\\\\\\\\\\	mark;type\\\\\\\\\\\\\\\\\	mark;Player\\\\\\\\\\\\\\\\\\	immob;;V\\\\\\\\\\\\\\\\\\\	piece;;;RollAttack.png;Diceroller/-1	\	\\	\\\	\\\\	\\\\\	\\\\\\	\\\\\\\	\\\\\\\\	\\\\\\\\\	\\\\\\\\\\	\\\\\\\\\\\	\\\\\\\\\\\\	\\\\\\\\\\\\\	\\\\\\\\\\\\\\	0\\\\\\\\\\\\\\\	\\\\\\\\\\\\\\\\	attack\\\\\\\\\\\\\\\\\	1\\\\\\\\\\\\\\\\\\	\\\\\\\\\\\\\\\\\\\	null;0;0;47</VASSAL.build.widget.PieceSlot>
+        </VASSAL.build.module.map.SetupStack>
+        <VASSAL.build.module.map.SetupStack name="Number Buttons" useGridLocation="false" x="360" y="15">
+            <VASSAL.build.widget.PieceSlot entryName="Player 1 Defence Dice" gpid="48" height="0" width="0">+/null/button;63743,0,Report;-120;-20;240;40;Report	immob;;V\	report;63743\,0\,Report;$PlayerName$ $newPieceName$ selected;;;Defence Dice\\	globalkey;;82,715;82,130;type = dice;false;1;true;true;;resets and turns on dice;-1\\\	globalkey;;90,715;79,130;type = dice &amp;&amp; Die Faces_Active = true;false;1;true;true;;Turns off dice and resets;-1\\\\	macro;Reset the dice;;;;48\,650,49\,650,50\,650,51\,650,52\,650,53\,650;90\,715,82\,715;false;;;counted;;;;false;;1;1\\\\\	setprop;P1DefDice;true,0,5,false;:48\,650:P\,0,:49\,650:P\,1,:50\,650:P\,2,:51\,650:P\,3,:52\,650:P\,4,:53\,650:P\,5;Set number of Att button pressed into global property;Current Zone\/Current Map\/Module;\\\\\\	button;53,650;80;-20;40;40;Press 5\\\\\\\	button;52,650;40;-20;40;40;Press 4\\\\\\\\	button;51,650;0;-20;40;40;Press 3\\\\\\\\\	button;50,650;-40;-20;40;40;Press 2\\\\\\\\\\	button;49,650;-80;-20;40;40;Press 1\\\\\\\\\\\	button;48,650;-120;-20;40;40;Press 0\\\\\\\\\\\\	emb2;Activate;2;;;2;;;2;;;;1;false;0;0;Button-DefenceDice-Pressed0.png,Button-DefenceDice-Pressed1.png,Button-DefenceDice-Pressed2.png,Button-DefenceDice-Pressed3.png,Button-DefenceDice-Pressed4.png,Button-DefenceDice-Pressed5.png;,,,,,;false;Number button Layers;;;true;P1DefDice;0;1;true;65,130;;\\\\\\\\\\\\\	mark;type\\\\\\\\\\\\\\	mark;Player\\\\\\\\\\\\\\\	piece;;;;Player 1 Defence Dice/	\	-1\\	\\\	\\\\	\\\\\	\\\\\\	\\\\\\\	\\\\\\\\	\\\\\\\\\	\\\\\\\\\\	\\\\\\\\\\\	\\\\\\\\\\\\	4\\\\\\\\\\\\\	defence\\\\\\\\\\\\\\	1\\\\\\\\\\\\\\\	null;0;0;</VASSAL.build.widget.PieceSlot>
+        </VASSAL.build.module.map.SetupStack>
+        <VASSAL.build.module.map.SetupStack name="Roll All Dice" useGridLocation="false" x="240" y="50">
+            <VASSAL.build.widget.PieceSlot entryName="Diceroller" gpid="49" height="0" width="0">+/null/button;63743,0,RollAllDice;-75;-15;150;30;Roll Dice	globalkey;;63743,0,RollAllDice;68,130;;false;1;true;true;;;-1\	immob;;V\\	piece;;;Rolldice.png;Diceroller/	\	\\	null;0;0;49</VASSAL.build.widget.PieceSlot>
+        </VASSAL.build.module.map.SetupStack>
+        <VASSAL.build.module.map.SetupStack name="Roll Defence" useGridLocation="false" x="390" y="50">
+            <VASSAL.build.widget.PieceSlot entryName="Diceroller" gpid="52" height="0" width="0">+/null/report;63743\,0\,ReportDefence;$PlayerName$ rolled Defence;;;	setprop;P1DefDice;true,0,5,false;::P\,0;Set number of Att button pressed into global property;Current Zone\/Current Map\/Module;\	button;68,130;-75;-15;150;30;Roll Dice\\	globalkey;;53,130;53,130;BasicName = P1DefDie5;false;1;true;true;;set dice 5;-1\\\	globalkey;;52,130;52,130;BasicName = P1DefDie4;false;1;true;true;;set dice 4;-1\\\\	globalkey;;51,130;51,130;BasicName = P1DefDie3;false;1;true;true;;set dice 3;-1\\\\\	globalkey;;50,130;50,130;BasicName = P1DefDie2;false;1;true;true;;set dice 2;-1\\\\\\	globalkey;;49,130;49,130;BasicName = P1DefDie1;false;1;true;true;;set dice 1;-1\\\\\\\	globalhotkey;;48,130;81,130;rolls the dice\\\\\\\\	macro;roll 5;;68,520;rollvalue = 5;;48\,130,49\,130,48\,130,50\,130,48\,130,51\,130,48\,130,52\,130,48\,130,53\,130;false;;;counted;;;;false;;1;1\\\\\\\\\	macro;roll 4;;68,520;rollvalue = 4;;48\,130,49\,130,48\,130,50\,130,48\,130,51\,130,48\,130,52\,130;false;;;counted;;;;false;;1;1\\\\\\\\\\	macro;roll 3;;68,520;rollvalue = 3;;48\,130,49\,130,48\,130,50\,130,48\,130,51\,130;false;;;counted;;;;false;;1;1\\\\\\\\\\\	macro;roll 2;;68,520;rollvalue = 2;;48\,130,49\,130,48\,130,50\,130;false;;;counted;;;;false;;1;1\\\\\\\\\\\\	macro;roll 1;;68,520;rollvalue = 1;;48\,130,49\,130;false;;;counted;;;;false;;1;1\\\\\\\\\\\\\	macro;roll 0;;68,520;rollvalue = 0;;48\,130;false;;;counted;;;;false;;1;1\\\\\\\\\\\\\\	PROP;rollvalue;true,0,6,false;:68\,65:P\,$P1DefDice$\\\\\\\\\\\\\\\	macro;Dice start;Roll Dice;68,130;;;68\,65,68\,520,63743\,0\,ReportDefence;false;;;counted;;;;false;;1;1\\\\\\\\\\\\\\\\	immob;;V\\\\\\\\\\\\\\\\\	mark;type\\\\\\\\\\\\\\\\\\	mark;Player\\\\\\\\\\\\\\\\\\\	piece;;;RollDefence.png;Diceroller/-1	\	\\	\\\	\\\\	\\\\\	\\\\\\	\\\\\\\	\\\\\\\\	\\\\\\\\\	\\\\\\\\\\	\\\\\\\\\\\	\\\\\\\\\\\\	\\\\\\\\\\\\\	\\\\\\\\\\\\\\	0\\\\\\\\\\\\\\\	\\\\\\\\\\\\\\\\	\\\\\\\\\\\\\\\\\	defence\\\\\\\\\\\\\\\\\\	1\\\\\\\\\\\\\\\\\\\	null;0;0;52</VASSAL.build.widget.PieceSlot>
+        </VASSAL.build.module.map.SetupStack>
+    </VASSAL.build.module.PrivateMap>
+    <VASSAL.build.module.DiceButton addToTotal="0" hotkey="81,130" icon="" nDice="1" nSides="6" name="dice" plus="0" prompt="false" reportFormat="" reportTotal="false" sortDice="false" text="" tooltip="dice"/>
+</VASSAL.launch.BasicModule>
