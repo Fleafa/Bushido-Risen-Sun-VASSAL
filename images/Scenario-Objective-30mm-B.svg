@@ -1,0 +1,8 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg contentScriptType="application/ecmascript" xmlns:serif="http://www.serif.com/" width="79px" xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" contentStyleType="text/css" height="79px" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1">
+    <g transform="matrix(0.833333,0,0,0.833333,0,0)">
+        <g transform="matrix(-0.849738,1.04063e-16,-1.04063e-16,-0.849738,868.241,719.496)">
+            <circle r="55.598" style="fill:rgb(0,0,255);" cx="966.178" cy="791.129"/>
+            <path d="M966.178,735.531C996.863,735.531 1021.78,760.443 1021.78,791.129C1021.78,821.815 996.863,846.727 966.178,846.727C935.492,846.727 910.579,821.815 910.579,791.129C910.579,760.443 935.492,735.531 966.178,735.531ZM966.178,744.945C991.667,744.945 1012.36,765.639 1012.36,791.129C1012.36,816.618 991.667,837.313 966.178,837.313C940.688,837.313 919.994,816.618 919.994,791.129C919.994,765.639 940.688,744.945 966.178,744.945Z"/>
+        </g>
+    </g>
+</svg>
